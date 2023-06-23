@@ -30,7 +30,8 @@ kubectl apply -f gainers-deployment.yaml
 ```
 kubectl get all
 ```
-<img width="685" alt="Screenshot 2023-05-11 at 12 17 19 AM" src="https://github.com/gsanchez222/finalproject/assets/97054495/03c3341c-dd87-47bd-8cf2-6ba8527342f8">
+![image](https://github.com/mehmeTurhan/GM-Trading-Advisor/assets/97054495/833eb988-4397-4584-af06-e3722acb7823)
+
 
 6. In this case, our service is running on 8081:32675,So, URL:http://localhost:32675/gainers
 
