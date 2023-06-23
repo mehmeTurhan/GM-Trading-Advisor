@@ -1,7 +1,7 @@
 # GM TradingAdvisor 
 Gustavo Sanchez and Mehmet Turhan
 
-For our final project we would like to build an event driven architecture. As it was discussed in the book we would like to execute a financial trade, that would be pulling in data from an API to then execute the trading algorithm. 
+An event driven architecture. We would like to execute a financial trade, that would be pulling in data from an API to then execute the trading algorithm. 
 
 The API we are using is from this website:https://site.financialmodelingprep.com/ and it provides the most gainers of the day of the stock market as well as the stock ticker and the price of the top 5
 
