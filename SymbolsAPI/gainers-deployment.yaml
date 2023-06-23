@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gainersdeployment
+  labels:
+    app: gainers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gainers-label
+  template:
+    metadata:
+      labels:
+        app: gainers-label
+    spec:
+      containers:
+      - name: gainers-container
+        image: mehmetturhan/gainers:1.0
+        ports:
+        - containerPort: 8081
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gainers-service
+  labels:
+    app: gainers-label
+spec: 
+  type: NodePort
+  ports:
+  - port: 8081
+    targetPort: 8081
+    protocol: TCP
+  selector:
+    app: gainers-label
